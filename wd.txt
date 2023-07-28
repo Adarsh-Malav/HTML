@@ -1,0 +1,28 @@
+Website : Collection of web pages made run on server, where a company, school etc can put there infomation that can be found on www.
+
+www : websites which are accessible publicily on local computers.
+
+Http/https : protocol foundation of www responsible for data messaging how data is formed and transfered from web browser to web server
+
+client server : is a relationship in which one program, the client, requests a service or resource from another program, the server example tops technolgy
+
+domain : A domain is a network of computers and devices that are controlled by one set authority , a domain is controlled by one particular company that has its own internet presence and IP address. The domain is labeled by its domain name, such as tops or tops.com.
+
+Host : the one who provides access to other 
+
+Hosting : website hosting means deploying a website on a server where the data of the website can be stored and can be accessed
+
+
+path : A file path describes the location of a file in a web site's folder structure.
+
+extension : extension is the file extenion example .html .css which have different behaviour
+
+Editor : where all coding is done for the web pages 
+
+FTP : protocol responsible for download upload and tranfer file
+
+URL : URL is an acronym for Uniform Resource Locator and is a reference (an address) to a resource on the Internet. A URL has two main components: Protocol identifier: For the URL http://tops.com , the protocol identifier is http . Resource name: For the URL http://tops.com , the resource name is example.com .
+
+Address bar : is the element that shows the current url
+
+Title bar : title of the document in a web page  
