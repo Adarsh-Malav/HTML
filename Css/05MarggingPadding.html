@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+
+        }   
+        div{
+            width: 500px;
+            height: 500px;
+        }
+        
+        .margin{
+            background-color: teal;
+            color: khaki;
+            margin: 100px; /* All four side */
+            margin: 100px 200px; /* top-bottom and right-left*/
+            margin: 100px 200px 300px; /* top and right-left and bottom*/
+            margin: 100px 200px 300px 400px; /* top and right and left and bottom*/
+        }
+        .padding{
+            background-color: teal;
+            color: khaki;
+            padding: 100px; /* All four side */
+            padding: 100px 200px; /* top-bottom and right-left*/
+            padding: 100px 200px 300px; /* top and right-left and bottom*/
+            padding: 100px 200px 300px 400px; /* top and right and bottom and left*/
+        }
+        div[class*=box]{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border: 10px solid teal;
+            background-color: crimson;
+            color: aliceblue;
+        }
+        .border-box{
+            box-sizing: border-box;
+            /*total width = 100px - 20px*2 - 10px*2 = 40px */
+            /*total height = 100px - 20px*2 - 10px*2 = 40px */
+        }
+        .content-box{
+            box-sizing: content-box;
+            /*total width = 100px + 20px*2 + 10px*2 = 160px */
+            /*total height = 100px + 20px*2 + 10px*2 = 160px */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+       recusandae distinctio perspiciatis quisquam neque nesciunt omnis, doloremque
+       harum fugiat quod eos sint maxime repudiandae impedit hic optio aspernatur 
+    </div>
+    <hr>
+    <div class="padding">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+       recusandae distinctio perspiciatis quisquam neque nesciunt omnis, doloremque
+       harum fugiat quod eos sint maxime repudiandae impedit hic optio aspernatur 
+    </div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <hr>
+    <div class="content-box">content-box</div>
+
+</body>
+</html>
