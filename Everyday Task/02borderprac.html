@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+           
+        }
+        body{
+            background-color: bisque;
+        }
+        div[class*=box]{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            
+        }
+        .box-1{
+            
+            background-color: rgb(205, 242, 230);
+            border-bottom: 10px solid red;
+            margin: 10px;
+        }
+        .box-2{
+            background-color: rgb(99, 236, 191);
+            border-top:10px solid red;
+            border-left:10px solid red;
+            margin: 10px;
+        }
+        .box-3{
+            background-color: rgb(19, 233, 162);
+            border-top:10px solid;
+            border-bottom:10px solid;
+            border-top-color: blueviolet;
+            border-bottom-color: rgb(9, 17, 109);
+            margin: 10px;
+        }
+        .box-4{
+            background-color: rgb(242, 138, 47);
+            border:10px solid rgb(123, 3, 3);
+            margin: 10px;
+        }
+        .box-5{
+            background-color: rgb(238, 187, 142);
+            border-width: 10px;
+            border-style: dashed;
+            border-color: rgb(134, 55, 55);
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-6{
+            background-color: rgb(133, 98, 67);
+            border-width: 10px;
+            border-style: dotted;
+            border-color: rgb(87, 37, 37);
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-7{
+            background-color: rgb(147, 86, 32);
+            border-width: 10px;
+            border-style: double;
+            border-color: rgb(57, 53, 53);
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-8{
+            background-color: rgb(209, 203, 197);
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(26, 6, 6);
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        
+        .box-9{
+            background-color: rgb(209, 203, 197);
+            border-width: 20px;
+            border-style: hidden;
+            border-color: rgb(63, 27, 27);
+            padding: 20px;
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-10{
+            background-color: rgb(103, 233, 187);
+            border-width: 20px;
+            border-style: inherit;
+            border-color: rgb(215, 2, 2);
+            padding: 20px;
+
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-11{
+            background-color: rgb(52, 176, 132);
+            border-width: 20px;
+            border-style: solid;
+            border-style: dashed;
+            border-style: initial;
+            border-color: rgb(188, 81, 81);
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-12{
+            background-color: rgb(52, 176, 132);
+            border-width: 20px;
+            border-color:  blue;
+            border-style: inset;
+            border-color: rgb(188, 81, 81);
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-13{
+            background-color: rgb(52, 176, 132);
+            border-width: 20px;
+            border-style: outset;
+            border-color: rgb(188, 81, 81);
+            /* border:10px  rgb(134, 55, 55); */
+            margin: 10px;
+        }
+        .box-14{
+            border:10px rgb(2, 17, 33);
+            border: 10px double;
+            border-collapse: collapse;
+            background-color: rgb(41, 151, 202);
+            margin: 10px;
+        }
+        .box-15{
+            border:10px rgb(2, 17, 33);
+            border: 20px double;
+            border-block-color:gray ;
+            background-color: rgb(41, 151, 202);
+            margin: 10px;
+        }
+        .box-16{
+            border:10px rgb(5, 53, 102);
+            border-style: dotted solid dashed double;
+            background-color: rgb(41, 151, 202);
+            margin: 10px;
+        }
+        .box-17{
+            border:10px rgb(5, 53, 102);
+            border:10px solid;
+            background-color: rgb(41, 151, 202);
+            margin: 10px;
+            border-spacing: 100px;
+            background-image: url(../images/html.png);
+            background-origin: padding-box;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+        .box-18{
+            border: 10px ridge blue;
+            margin: 10px;
+            border-radius: 50%;
+            background-clip: padding-box;
+            background:url(../images/01image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .box-19{
+            border: 10px ridge blue;
+            margin: 10px;
+            background-clip: padding-box;
+            background:url(../images/01image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-inline-start-style: dashed;
+            border-block-start-style: dashed;
+            background-origin: border-box;
+            border-radius: 50%;
+            outline: 10px dashed rgb(6, 38, 70);
+        
+        }    
+        </style>
+</head>
+<body>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+    <div class="box-5"></div>
+    <div class="box-6"></div>
+    <div class="box-7"></div>
+    <div class="box-8"></div>
+    <div class="box-9"></div>
+    <div class="box-10"></div>
+    <div class="box-11"></div>
+    <div class="box-12"></div>
+    <div class="box-13"></div>
+    <div class="box-14"></div>
+    <div class="box-15"></div>
+    <div class="box-16"></div>
+    <div class="box-17"></div>
+    <div class="box-18"></div>
+    <div class="box-19"></div>
+</body>
+</html>
