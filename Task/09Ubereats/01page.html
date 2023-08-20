@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .row{
+            background-image:  url(../../images/uber_background.avif);
+            width: 100%;
+            height: 645px;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-size: cover;
+            background-position: center;
+           
+        } 
+        #right{
+            position: absolute;
+            right: 20px;
+            margin: 30px; 
+            font-weight: bold;
+            font-size: 25px;           
+        }
+        #right a{
+            text-decoration: none;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+        #navbar{
+            display: flex;
+            height: 85px;
+            background-color: blueviolet;
+            position: sticky;
+        }
+        #ubereats{
+            padding: 22px;
+            display: block;
+            text-align: center;
+            margin-left: 83px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #section{
+            margin-top: 150px;
+        }
+        #sectionhead{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 40px;
+            margin-left: 60px;
+
+        }
+        #delivery{
+            display: flex;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+
+        select{
+            margin-left: 10px;
+        }
+        
+        #explore{
+            color: white;
+            border: 2px solid black;
+            padding: 10px;
+            margin-left: 10px;
+            padding-top: 12px;
+            background-color: black;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <nav id="navbar">
+                <a href="" id="ubereats">Uber Eats</a>
+                <div id="right"> 
+                    <a href="">Sign up</a>
+                    <a href="">Log in</a>
+                </div>
+            </nav>
+            
+                <section>
+                    <div  id="section">
+                        <p id="sectionhead">Order delivery near you</p>
+                        <div id="delivery">
+                            <input type="text" style="width: 500px; height: 50px;" placeholder="Enter delivery address">
+                            <select name="" id="" >
+                                <option value="">delivery now</option>
+                                <option value="">Schedule for later</option>
+                            </select>
+                            <p id="explore">Explore nearby</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <section>
+
+               <img src="../../images/01image.jpg" alt="">
+            </section>
+    </div>
+</body>
+
+</html>
