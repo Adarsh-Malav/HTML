@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            background-color: aquamarine;
+            width: 100%;
+            height: 500px;
+            display: flex;
+        }
+        .box2{
+            background-color: aquamarine;
+            width: 100%;
+            height: 500px;
+            display: flex;
+
+        }
+        .block1{
+            background-color: bisque;
+            height: 25%;
+            width: 25%;
+            color: rgb(106, 179, 243);
+            text-align: center;
+            padding-top: 40px;
+        }
+        .block2{
+            background-color: rgb(234, 193, 142);
+            height: 25%;
+            width: 25%;
+            color: aliceblue;
+            display: grid;
+            place-items: center;
+        }
+        .block3{
+            background-color: rgb(190, 135, 68);
+            height: 25%;
+            width: 25%;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-2{
+            width: 100%;
+            height: 100px;
+            background-color: blueviolet;
+            color: aliceblue;
+            margin: 10px;
+        }
+        .inline{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(239, 176, 176);
+            
+        }
+        .inline span{
+            background-color: rgb(192, 55, 55);
+            color: aliceblue;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* margin left right will work in inline */
+            /* position: absolute; */
+            /* left: 0px; */
+        }
+        .inline label{
+            background-color: rgb(242, 117, 117);
+            color: aliceblue;
+            margin-top: 10px;
+            position: absolute;
+            right: 0px;
+        }
+        .box4{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(40, 159, 159);
+            display: flex;
+        }
+        .box4 label{
+            background-color: aquamarine;
+            display: block;
+            width: 25%;
+        }
+        .box4 div{
+            width: 25%;
+            background-color: rgb(172, 189, 184);
+            position: absolute;
+            right: 10px;
+            
+            
+        }
+        .box5{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(40, 159, 159);
+            /* display: flex; */
+        }
+        .box5 div{
+            width: 100%;
+            background-color: rgb(172, 189, 184);
+            display: flex;
+            justify-content: center;
+        }
+        </style>
+</head>
+
+<body>
+    <h2>this is box 1</h2>
+    
+    <div class="box1">
+        <div class="block1">i am block 1</div>
+        <div class="block2">i am block 2</div>
+        <div class="block3">i am block 3</div>
+    </div>
+    
+    <hr>
+    
+    <h2>this is box 2</h2>
+    
+    <div class="box2">
+        <div class="box-2">i am block 1</div>
+        <div class="box-2">i am block 2</div>
+        <div class="box-2">i am block 3</div>
+    </div>
+    <hr>
+    <h2>inline inside block</h2>
+    <div class="inline">
+        <span>i am inline 1</span>
+        <label>i am inline 2</label>
+        <hr>
+        <span>i am inline 3</span>
+    </div>
+    <h2>inline and div in div</h2>
+    <div class="box4">
+        <a href="" style="display: block;">i am inline</a>
+        <div>i am div1</div>
+        <h1>        cannot give display flex when we use inline and block element together
+        </h1>
+    </div>
+    
+    <h2>
+        two dic in one
+    </h2>
+    <div class="box5">
+        <div style="display: flex;" >
+            <div style="display: flex; justify-content: center;">i am div1</div>
+            <div>i am div2</div>
+         </div>
+
+    </div>
+</body>
+</html>
