@@ -24,9 +24,7 @@
             width: 92%;
             height: 95px;
             display: flex;
-            top: 0px;
             align-items: center;
-            position: absolute;
             right: 0;
         }
       
@@ -116,8 +114,6 @@
         }
         #third{
             margin-left: 30px;
-            position: absolute;
-            right: 30px;
         }
         .account{
             font-size: 30px;
@@ -200,7 +196,57 @@
             left: 0;
             background-color: rgb(0,0,0);
             background-color: rgba(0,0,0, 0.9);
-            transition: 0.5s
+            transition: 0.5s;
+        }
+        #map{
+            display: flex;
+            height: 90px;
+        }
+        #fourth{
+            margin-left: 30px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        #fifth{
+            position: absolute;
+            right: 34px;
+            font-size: 20px;
+        }
+        #fifth a{
+            color: black;
+        }
+        iframe{ 
+            width: 95%;
+            height: 600px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        #sidelinks{
+            margin-left: 18px;
+        }
+        #sidelinks a{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        
+        .container .sidepanel nav #sidedown{
+            display: flex;
+            position: absolute;
+            bottom: 120px;
+        }
+
+       .container .sidepanel nav #sidedown img{
+            width: 56px;
+            height: 56px;
+            margin-left: 18px;
+        }
+        .container .sidepanel nav #sidedown p{
+            font-size: 20px;
+            margin-left: 15px;
+            margin-right: 8px;
         }
 
     </style>
@@ -214,6 +260,15 @@
                     <!-- <a href="javascript:void(0)" >×</a> -->
                     <div id="sidesignup"><a href="" >Sign up</a></div>
                     <div id="sidelogin"><a href="" >Log in</a></div>
+                    <div id="sidelinks">
+                        <a href="" style="display: block;">Create a business account</a>
+                        <a href="" style="display: block;">Add your restaurant</a>
+                        <a href="" style="display: block;">Sign up to deliver</a>
+                </div>
+                <div id="sidedown">
+                    <img src="../images/ubereatslogo.svg" alt="">
+                    <p>There's more to love in the app.</p>
+                </div>
                 </nav>
             </div>
             
@@ -259,11 +314,23 @@
         </div>
     </Section>
 
+    <section id="map">
+        <div id="fourth">
+            <p>Cities near me</p>
+        </div>
+        <div id="fifth">
+            <p><a href="">View All 500+ cities</a></p>
+        </div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15249822.21961233!2d82.75252935!3d21.068622799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1692617295208!5m2!1sen!2sin" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
     <script>
         function openNav() {
         document.getElementById("mySidepanel").style.width = "42vh";
         document.getElementById("myNav").style.display = "block";
+
         }
 
         function closeNav() {
