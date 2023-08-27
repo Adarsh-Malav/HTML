@@ -12,7 +12,7 @@
         }
        
         .container {
-            background: url(../images/uber_background.jpg);
+            background: url(../images/uber_background2.webp);
             width: 100%;
             background-repeat: no-repeat;
             background-origin: border-box;
@@ -28,13 +28,7 @@
             right: 0;
         }
       
-        #ubereats{
-            text-decoration: none;
-            color: black;
-            font-size: 35px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
+       
         #hamburger{
             display: flex;
             justify-content: center;
@@ -67,7 +61,8 @@
       
         #sectionhead{
             font-weight: 700;
-            font-size: 50px;
+            font-size: 52px;
+            font-family: UberMove, sans-serif;
         }
         #delivery{
             display: flex;
@@ -247,6 +242,36 @@
             font-size: 20px;
             margin-left: 15px;
             margin-right: 8px;
+        } .container .sidepanel nav #sidedown2{
+            display: flex;
+            position: absolute;
+            bottom: 60px;
+        }
+        .container .sidepanel nav #sidedown2 img{
+            /* background-color: blueviolet; */
+            width: 96px;
+            height: 40px;
+            margin-left: 15px;
+            border: 2px solid white;
+            border-radius: 15px ;
+        }
+        .container .sidepanel nav #sidedown2 div{
+            border: 2px solid white;
+            border-radius: 15px ;
+            justify-content: center;
+            
+        }
+        .container .sidepanel nav #sidedown2 div img{
+            width: 30px;
+            height: 18px;
+            margin-left: 8px;
+            margin-top: 9px;
+        }
+        .container .sidepanel nav #sidedown2 div p{
+            margin-top: 8px;
+            border: 2px solid white;
+            border-radius: 5px ;
+            margin-right: 8px;
         }
 
     </style>
@@ -269,13 +294,21 @@
                     <img src="../images/ubereatslogo.svg" alt="">
                     <p>There's more to love in the app.</p>
                 </div>
+                <div id="sidedown2">
+                    <img src="../images/applelogo.png"  alt="">
+                    <div style="display: flex;">
+                        <img src="../images/androidimage.png" alt="">
+                        <p>Android</p>
+                    </div>
+                </div>
                 </nav>
             </div>
             
         <div id="temphead" >
             <div id="hamburger" ><img src="../images/menu2.png" alt="" class="openbtn" onclick="openNav()"></div>
             <nav id="navbar">
-                <a href="" id="ubereats">Uber Eats</a>
+                <!-- <a href="" id="ubereats">Uber Eats</a> -->
+                <img src="../images/uber_eats.svg" alt="">
                 <div id="right"> 
                     <a href="" style="color: black; background-color: white; box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.1);border: 1px solid white;">Log in</a>
                     <a href="">Sign up</a>
