@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Practice</title>
+
+    <style>
+        .box1{
+            border: 2px solid black;
+        }
+        .box2~p{
+            background-color: crimson;
+        }
+        .box2{
+            border: 2px solid black;
+        }
+        .box2 p{
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            
+            <h2>Hello</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dignissimos.</p>
+        </div>
+        <div class="box2">
+        <h2>About</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, commodi?</p>
+    </div>
+</body>
+</html>

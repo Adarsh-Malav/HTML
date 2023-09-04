@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber Eats 05</title>
+    <title>Adarsh-Uber</title>
     <style>
         *{
             margin: 0px;
@@ -12,28 +12,21 @@
         }
        
         .container {
-            background: url(../images/uber_background2.webp);
-            width: 100%;
+            background: url(../images/uber_background3.jpg);
+            width: 82.8rem;
             background-repeat: no-repeat;
             background-origin: border-box;
             background-size:cover;
             background-position: center;
+            /* display: flex; */
         }
        
         #navbar{
-            width: 92%;
+            width: 82.8rem;
             height: 95px;
+            position: fixed;
             display: flex;
             align-items: center;
-            right: 0;
-        }
-      
-       
-        #hamburger{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 8%;
         }
        
         #right{
@@ -57,6 +50,7 @@
             flex-direction: column;
             justify-content: center;
             padding-left: 50px;
+            
         }
       
         #sectionhead{
@@ -120,11 +114,12 @@
         }
        
         .openbtn{
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 25px;
+            margin-left: 40px;
         }
         
-        .sidepanel {
+        /* .sidepanel {
             width: 0;
             z-index: 2;
             position: fixed;
@@ -134,7 +129,8 @@
             overflow-x: hidden;
         }
 
-        .sidepanel nav{
+        */
+        .sidebar nav{
             margin-top: 24px;
         }
        
@@ -149,7 +145,7 @@
             justify-content: center;
             align-items: center;
         }
-        .sidepanel nav #sidesignup a{
+        .sidebar nav #sidesignup a{
             text-decoration: none;
             color: white;
             font-size: 20px;
@@ -168,17 +164,10 @@
             margin-top: 9px;
         }
 
-        .sidepanel nav #sidelogin a{
+        .sidebar nav #sidelogin a{
             text-decoration: none;
             color: black;
             font-size: 20px;
-        }
-
-        #temphead{
-            display: flex;
-            width: 100%;
-            position: fixed;
-            height: 95px;
         }
 
         .overlay {
@@ -189,13 +178,15 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgb(0,0,0);
             background-color: rgba(0,0,0, 0.9);
             transition: 0.5s;
         }
+
+
         #map{
             display: flex;
             height: 90px;
+           
         }
         #fourth{
             margin-left: 30px;
@@ -227,27 +218,28 @@
             margin-top: 15px;
         }
         
-        .container .sidepanel nav #sidedown{
+       .sidebar nav #sidedown{
             display: flex;
             position: absolute;
-            bottom: 120px;
+            /* bottom: 120px; */
+            top: 26rem;
         }
 
-       .container .sidepanel nav #sidedown img{
+       .sidebar nav #sidedown img{
             width: 56px;
             height: 56px;
             margin-left: 18px;
         }
-        .container .sidepanel nav #sidedown p{
+         .sidebar nav #sidedown p{
             font-size: 20px;
             margin-left: 15px;
             margin-right: 8px;
-        } .container .sidepanel nav #sidedown2{
+        }  .sidebar nav #sidedown2{
             display: flex;
             position: absolute;
-            bottom: 60px;
+            top: 30rem;
         }
-        .container .sidepanel nav #sidedown2 img{
+        .sidebar nav #sidedown2 img{
             /* background-color: blueviolet; */
             width: 96px;
             height: 40px;
@@ -255,32 +247,67 @@
             border: 2px solid white;
             border-radius: 15px ;
         }
-        .container .sidepanel nav #sidedown2 div{
+         .sidebar nav #sidedown2 div{
             border: 2px solid white;
             border-radius: 15px ;
             justify-content: center;
             
         }
-        .container .sidepanel nav #sidedown2 div img{
+         .sidebar nav #sidedown2 div img{
             width: 30px;
             height: 18px;
             margin-left: 8px;
             margin-top: 9px;
         }
-        .container .sidepanel nav #sidedown2 div p{
+       .sidebar nav #sidedown2 div p{
             margin-top: 8px;
             border: 2px solid white;
             border-radius: 5px ;
             margin-right: 8px;
         }
+        .sidebar{
+            background-color: white;
+            width: 42vh;
+            position: fixed;
+            z-index: 2;
+            height: 130rem;
+            transition: 0.5s;
+        }
+        .sidebarGo{
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+        @media (max-width:390px) {
+            #navbar
+            {
+                padding-top: 30px;
+                position: static;
+            }
+           .openbtn{
+            height: 120px;
+            width: 120px;
+            
+            }
+            #uber_eats{
+                width: 35rem;
+            }
+            #right{
+                font-size: 60px;
+                right: -57rem;
+            }
+            #sectionhead{
+                font-size: 110px;
+                flex-wrap: wrap;
+            }
 
+        }
     </style>
     
 </head>
 <body onscroll="scrol()" >
-    <div id="myNav" class="overlay" onclick="closeNav()"></div>
-    <div class="container" >
-            <div id="mySidepanel" class="sidepanel">
+    <div id="myNav" class="overlay"></div>
+   
+            <div class="sidebar sidebarGo">
                 <nav>
                     <!-- <a href="javascript:void(0)" >×</a> -->
                     <div id="sidesignup"><a href="" >Sign up</a></div>
@@ -304,17 +331,17 @@
                 </nav>
             </div>
             
-        <div id="temphead" >
-            <div id="hamburger" ><img src="../images/menu2.png" alt="" class="openbtn" onclick="openNav()"></div>
+            <div class="container" >
             <nav id="navbar">
+                <img src="../images/menu2.png" alt="" class="openbtn">
                 <!-- <a href="" id="ubereats">Uber Eats</a> -->
-                <img src="../images/uber_eats.svg" alt="">
+                <img src="../images/uber_eats.svg" id="uber_eats" style="margin-left: 30px;" alt="">
                 <div id="right"> 
                     <a href="" style="color: black; background-color: white; box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.1);border: 1px solid white;">Log in</a>
                     <a href="">Sign up</a>
                 </div>
             </nav>
-        </div>
+       
             
         <div id="section" >
             <p id="sectionhead">Order delivery near you</p>
@@ -336,7 +363,7 @@
             <p class="add"><a href="">Create a bussiness account</a></p>
         </div>
         <div id="second">
-            <img src="../images/your rest.webp" alt="">
+            <img src="../mages/your rest.webp" alt="">
             <p class="account">Your restaurant, delivered</p>
             <p class="add"><a href="">Add you restaurent</a></p>
         </div>
@@ -360,24 +387,43 @@
 
 
     <script>
-        function openNav() {
-        document.getElementById("mySidepanel").style.width = "42vh";
-        document.getElementById("myNav").style.display = "block";
+        console.log('running')
+       
+        document.querySelector('.openbtn').addEventListener("click", ()=>{
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');
+            if(document.querySelector('.sidebar').classList.contains('sidebarGo')){
+                document.querySelector('.overlay').style.display='inline'
+            }
+            else{
+                document.querySelector('.overlay').style.display='block'
+            }
+        })
+        
+        document.querySelector('.overlay').addEventListener("click",()=>{
+            document.querySelector('.overlay').style.display='none'
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');;
+          
+        })
 
-        }
+        // function openNav() {
+        // document.getElementById("mySidepanel").style.width = "42vh";
+        // document.getElementById("myNav").style.display = "block";
 
-        function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-        document.getElementById("myNav").style.display = "none";
-        }
+        // }
+
+        // function closeNav() {
+        // document.getElementById("mySidepanel").style.width = "0";
+        // document.getElementById("myNav").style.display = "none";
+        // }
+
 
         function scrol(){
         if(scrollY){
-            document.getElementById("temphead").style.backgroundColor="white"   
+            document.getElementById("navbar").style.backgroundColor="white"   
              }
         else{
-            document.getElementById("temphead").style.backgroundColor="rgba(0,0,0,0)"
-            document.getElementById("temphead").style.transition="0.5s "
+            document.getElementById("navbar").style.backgroundColor="rgba(0,0,0,0)"
+            document.getElementById("navbar").style.transition="0.5s "
             }
         }
     </script>

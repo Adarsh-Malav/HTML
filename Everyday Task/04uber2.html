@@ -3,52 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber Eats</title>
+    <title>Uber Eats 04</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
+       
         .container {
-            background: url(../images/uber_background.jpg);
+            background: url(../images/uber_background2.webp);
             width: 100%;
-            /* height: 645px; */
             background-repeat: no-repeat;
             background-origin: border-box;
             background-size:cover;
             background-position: center;
         }
-        #logo img{
-            width: 40px;
-            height: 40px;
-            margin-left: 20px;
-        }
+       
         #navbar{
-            width: 100%;
+            width: 92%;
             height: 95px;
             display: flex;
-            position: fixed;
-            top: 0px;
             align-items: center;
-            background-color: aliceblue;
-            opacity: 0.7;
+            right: 0;
         }
-
-        #ubereats{
-            margin-left: 53px;
-            text-decoration: none;
-            color: black;
-            font-size: 35px;
-            font-family: Arial, Helvetica, sans-serif;
+      
+       
+        #hamburger{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8%;
         }
        
         #right{
             position: absolute;
             right: 50px;
-            /* font-weight: lighter; */
             font-size: 20px;           
-            /* z-index: -1; */
         }
        
         #right a{
@@ -69,9 +60,9 @@
         }
       
         #sectionhead{
-            /* font-family: Arial, Helvetica, sans-serif; */
             font-weight: 700;
-            font-size: 50px;
+            font-size: 52px;
+            font-family: UberMove, sans-serif;
         }
         #delivery{
             display: flex;
@@ -118,8 +109,6 @@
         }
         #third{
             margin-left: 30px;
-            position: absolute;
-            right: 30px;
         }
         .account{
             font-size: 30px;
@@ -129,20 +118,205 @@
             font-size: 20px;
             color: black;
         }
+       
+        .openbtn{
+            width: 30px;
+            height: 30px;
+        }
+        
+        .sidepanel {
+            width: 0;
+            z-index: 2;
+            position: fixed;
+            height: 645px;
+            background-color: white;
+            transition: 0.5s;
+            overflow-x: hidden;
+        }
+
+        .sidepanel nav{
+            margin-top: 24px;
+        }
+       
+        #sidesignup{
+            border: 2px solid black;
+            background-color: black;
+            width: 230px;
+            height: 55px;
+            border-radius: 9px;
+            margin-left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidepanel nav #sidesignup a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        #sidelogin{
+            border: 2px solid rgb(220, 215, 215);
+            background-color: rgb(220, 215, 215);
+            width: 230px;
+            height: 55px;
+            border-radius: 9px;
+            margin-left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 9px;
+        }
+
+        .sidepanel nav #sidelogin a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        #temphead{
+            display: flex;
+            width: 100%;
+            position: fixed;
+            height: 95px;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            transition: 0.5s;
+        }
+        #map{
+            display: flex;
+            height: 90px;
+        }
+        #fourth{
+            margin-left: 30px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        #fifth{
+            position: absolute;
+            right: 34px;
+            font-size: 20px;
+        }
+        #fifth a{
+            color: black;
+        }
+        iframe{ 
+            width: 95%;
+            height: 600px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        #sidelinks{
+            margin-left: 18px;
+        }
+        #sidelinks a{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        
+        .container .sidepanel nav #sidedown{
+            display: flex;
+            position: absolute;
+            bottom: 120px;
+        }
+
+       .container .sidepanel nav #sidedown img{
+            width: 56px;
+            height: 56px;
+            margin-left: 18px;
+        }
+        .container .sidepanel nav #sidedown p{
+            font-size: 20px;
+            margin-left: 15px;
+            margin-right: 8px;
+        } .container .sidepanel nav #sidedown2{
+            display: flex;
+            position: absolute;
+            bottom: 60px;
+        }
+        .container .sidepanel nav #sidedown2 img{
+            /* background-color: blueviolet; */
+            width: 96px;
+            height: 40px;
+            margin-left: 15px;
+            border: 2px solid white;
+            border-radius: 15px ;
+        }
+        .container .sidepanel nav #sidedown2 div{
+            border: 2px solid white;
+            border-radius: 15px ;
+            justify-content: center;
+            
+        }
+        .container .sidepanel nav #sidedown2 div img{
+            width: 30px;
+            height: 18px;
+            margin-left: 8px;
+            margin-top: 9px;
+        }
+        .container .sidepanel nav #sidedown2 div p{
+            margin-top: 8px;
+            border: 2px solid white;
+            border-radius: 5px ;
+            margin-right: 8px;
+        }
+
     </style>
+    
 </head>
-<body>
-    <div class="container">
-        <nav id="navbar">
-            <div id="logo"><img src="../images/menu.png" alt=""></div>
-            <a href="" id="ubereats">Uber Eats</a>
+<body onscroll="scrol()" >
+    <div id="myNav" class="overlay" onclick="closeNav()"></div>
+    <div class="container" >
+            <div id="mySidepanel" class="sidepanel">
+                <nav>
+                    <!-- <a href="javascript:void(0)" >×</a> -->
+                    <div id="sidesignup"><a href="" >Sign up</a></div>
+                    <div id="sidelogin"><a href="" >Log in</a></div>
+                    <div id="sidelinks">
+                        <a href="" style="display: block;">Create a business account</a>
+                        <a href="" style="display: block;">Add your restaurant</a>
+                        <a href="" style="display: block;">Sign up to deliver</a>
+                </div>
+                <div id="sidedown">
+                    <img src="../images/ubereatslogo.svg" alt="">
+                    <p>There's more to love in the app.</p>
+                </div>
+                <div id="sidedown2">
+                    <img src="../images/applelogo.png"  alt="">
+                    <div style="display: flex;">
+                        <img src="../images/androidimage.png" alt="">
+                        <p>Android</p>
+                    </div>
+                </div>
+                </nav>
+            </div>
+            
+        <div id="temphead" >
+            <div id="hamburger" ><img src="../images/menu2.png" alt="" class="openbtn" onclick="openNav()"></div>
+            <nav id="navbar">
+                <!-- <a href="" id="ubereats">Uber Eats</a> -->
+                <img src="../images/uber_eats.svg" alt="">
                 <div id="right"> 
-                    <a href="">Log in</a>
+                    <a href="" style="color: black; background-color: white; box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.1);border: 1px solid white;">Log in</a>
                     <a href="">Sign up</a>
                 </div>
-        </nav>
+            </nav>
+        </div>
             
-        <div id="section">
+        <div id="section" >
             <p id="sectionhead">Order delivery near you</p>
             <div id="delivery">
                     <input type="text" placeholder="Enter delivery address">
@@ -155,7 +329,7 @@
         </div>
 
     </div>
-    <Section id="content">
+    <Section id="content" >
         <div id="first">
             <img src="../images/feed your.webp" alt="">
             <p class="account">Feed your employees</p>
@@ -172,6 +346,40 @@
             <p class="add"><a href="">Sign up to deliver</a></p>
         </div>
     </Section>
-</body>
 
+    <section id="map">
+        <div id="fourth">
+            <p>Cities near me</p>
+        </div>
+        <div id="fifth">
+            <p><a href="">View All 500+ cities</a></p>
+        </div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15249822.21961233!2d82.75252935!3d21.068622799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1692617295208!5m2!1sen!2sin" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidepanel").style.width = "42vh";
+        document.getElementById("myNav").style.display = "block";
+
+        }
+
+        function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        document.getElementById("myNav").style.display = "none";
+        }
+
+        function scrol(){
+        if(scrollY){
+            document.getElementById("temphead").style.backgroundColor="white"   
+             }
+        else{
+            document.getElementById("temphead").style.backgroundColor="rgba(0,0,0,0)"
+            document.getElementById("temphead").style.transition="0.5s "
+            }
+        }
+    </script>
+</body>
 </html>
