@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01</h1>
+    <div id="container">
+
+        <label for="">Enter first number :</label> 
+        <input type="text" id="first"  oninput="getValue()">
+    <br>
+    <label for="">Enter Second number :</label> 
+    <input type="text" id="second" oninput="getValue()">
+    </div>
+    <script>
+        var a=100;
+        var b;
+        function getValue(){
+
+             a=document.getElementById("first").value;
+             b=document.getElementById("second").value;
+            console.log(a);
+            console.log(b);
+
+            if(a==100){
+                console.log("number is a ")
+            }else if(b==100){
+                console.log("number is b")
+            }
+        }
+        let c=a+b;
+         if(a==100){
+                 console.log("total is hundread")
+             }
+
+        // document.getElementById("container").style.backgroundColor="black";
+        
+    </script>
+</body>
+</html>
