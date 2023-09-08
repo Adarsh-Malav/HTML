@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0px;
@@ -131,7 +133,7 @@
         margin: 0 auto;
         display: flex;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 100px;
        }
        .section2 h1{
         color: black;
@@ -140,36 +142,144 @@
         font-weight: 500;
        }
        .cubes{
-        width: 69%;
+        width: 750px;
         height: 300px;
-        background-color: rgb(218, 214, 214);
         margin: 0 auto;
         display: flex;
+        margin-top: 20px;
        }
-       .cube1 .cube2 .cube3{
-        margin-left: 20px;
-        /* display: flex; */
+       .cube1{
+        /* margin-left: 20px; */
+        width: 250px;
+        /* display: flex;s */
+       }
+       .cube2{
+        width: 250px;
+       }
+       .cube3{
+        width: 250px;
        }
        .cube1 img{
-        width: 33.33%;
-        /* margin: 0 auto; */
-        /* background-color: aqua; */
-        margin-left: 114px;
+        width: 125px;
+        margin-left: 50px;
+        
         
     }
        .cube2 img{
-           width: 33.33%;
-           margin-left: 75px;
-           /* background-color: blue; */
+        width: 125px;
+        margin-left: 50px;
         }
         .cube3 img{
-            width: 33.33%;
-            margin-left: 75px;
-        /* background-color: blueviolet; */
+            width: 125px;
+        margin-left: 50px;
        }
+       .top-side{
+        display: flex;
+        justify-content: flex-end;
+        }
+       .sideNav{
+            width: 0px;
+            z-index: 2;
+            position: fixed;
+            height: 1200px;
+            background-color: white;
+            overflow-x: hidden;
+            /* position: absolute;
+            right: 0%; */
+            /* display: ; */
+       }
+       .sideNav > img{
+            position: absolute;
+            right: 6px;
+            top: 16px;
+            display: inline-block;
+       }
+       .sideNav a{
+        display: block;
+        text-decoration: none;
+        color: rgb(36, 35, 35);
+        margin-top: 32px;
+        text-align: center;
+        font-weight: 600;
+        font-family: sans-serif;
+        
+    }
+    .pink-banner img{
+        width: 346px;
+        margin-left: 24px;
+    }
+    .cube1 img+p, .cube2 img+p, .cube3 img+p{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .cube1 img+p+p, .cube2 img+p+p, .cube3 img+p+p{
+        font-size: 28px;
+        font-weight: 500px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .cube1 img+p+p+p, .cube2 img+p+p+p, .cube3 img+p+p+p{
+        color: #212026;
+        opacity: 0.64;
+        max-width: 60%;
+        margin: auto;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 13px;
+    }
+    .icons{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 20px;
+    }
+    .ola-side-icon{
+        width: 40px;
+        height: 16px;margin-left: 24px;
+    }
+    .sidebar-icons{
+        display: flex;
+    }
+    .sidebar-icons div{
+        position: absolute;
+       right: 0;
+       justify-content: space-between;
+    }
     </style>
 </head>
 <body>
+    <div class="top-side">
+        <div class="sideNav" id="sideNavbar">
+            <img src="ola-images/close.svg" alt="" onclick="closeNav()">
+            <a href="">Book an Ola Cab</a>
+            <a href="">Drive with Ola</a>
+            <a href="">Ola s1</a>
+            <a href="">Ola Electric</a>
+            <a href="">Ola FutureFactory</a>
+            <a href="">Ola Corporate</a>
+            <a href="">Ola Foundation</a>
+            <div class="pink-banner">
+                <img src="ola-images/pink-banner-mob.png" alt="">
+            </div>
+            <div style="height: 90px;">
+
+            </div>
+            <div class="sidebar-icons">
+                <img src="ola-images/black-ola.png" alt="" class="ola-side-icon">
+                <div>
+                    <i class="fa-brands fa-instagram icons" style="margin-right: 40px;"></i>
+                    <i class="fa-brands fa-youtube icons" style="    margin-right: 40px;"></i>
+                    <i class="fa-brands fa-twitter icons"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <div class="top-header">
         <div class="ola-logo">
@@ -181,13 +291,11 @@
             <a href="">Ola Futurefactory</a>
         </div>
         <div class="right-bts">
-          
                 <a href="" class="right-bts-left">Book an Ola Cab</a>
-         
                 <a href="" class="right-bts-right">Free S1 Test Ride</a>
         </div>
         <div class="hamburger">
-            <img src="ola-images/Hamburger.svg" alt="">
+            <img src="ola-images/Hamburger.svg" alt="" onclick="openNav()">
         </div>
     </div>
     <div class="background">
@@ -210,7 +318,7 @@
     <section class="cubes">
         <div class="cube1">
             <img src="ola-images/ola-image1.png" alt="">
-            <p>255+</p>
+            <p>250+</p>
             <p>Cities Covered</p>
             <p>Across India, Australia, New Zealand and the UK</p>
         </div>
@@ -228,5 +336,21 @@
         </div>
     </section>
     
+
+    <script>
+        function openNav() {
+        document.getElementById("sideNavbar").style.width = "376px";
+        // let counter=0;
+        // counter=counter+1;
+        // console.log(counter);
+
+        }
+
+        function closeNav() {
+        document.getElementById("sideNavbar").style.width = "0";
+        }
+
+    
+    </script>
 </body>
 </html>
