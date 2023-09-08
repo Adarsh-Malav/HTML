@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .top-header{
+            background-color: black;
+            width: 100%;
+            height: 64px;
+            display: flex;
+            position: fixed;
+            z-index: 1;
+
+        }
+        .ola-logo{
+            margin-left: 15px;
+        }
+        .ola-logo img{
+            width: 52px;
+            height: 32px;
+            margin-top: 15px;
+        }
+        .hamburger{
+            position: absolute;
+            right: 6px;
+            top: 23px;
+
+        }
+        .header-icons{
+            margin-left: 45px;
+        }
+        .header-icons a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 22px;
+            display: inline-block;
+            font-family: sans-serif;
+            padding: 5px 12px;
+            letter-spacing: 1px;
+        }
+       
+        .background{
+            width: 100%;
+            height: 50vh;
+            background-image: url(https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/hero-banner.webp);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: relative;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .right-bts{
+            display: flex;
+            position: absolute;
+            right: 40px;
+            /* top: 10px; */
+        }
+        .right-bts-left{
+            color: white;
+            background: rgba(255, 255, 255, 0.17);
+            padding: 14px 12px;
+            line-height: 16px;
+            margin: 10px;
+
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        .right-bts-right{
+            color: #000000;
+            background: rgb(255, 255, 255);
+            padding: 14px 12px;
+            line-height: 16px;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="top-header">
+        <div class="ola-logo">
+            <img src="ola-images/ola-white-logo.svg" alt="">
+        </div>
+        <div class="header-icons">
+            <a href="">OlaS1</a>
+            <a href="">OlaElectric</a>
+            <a href="">Ola Futurefactory</a>
+        </div>
+        <div class="right-bts">
+          
+                <a href="" class="right-bts-left">Book an Ola Cab</a>
+         
+                <a href="" class="right-bts-right">Free S1 Test Ride</a>
+        </div>
+        <div class="hamburger">
+            <img src="ola-images/Hamburger.svg" alt="">
+        </div>
+    </div>
+    <div class="background">
+        <!-- <img src="ola-images/hero-banner.webp" alt=""> -->
+    </div>
+
+   
+    
+</body>
+</html>
