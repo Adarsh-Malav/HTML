@@ -332,7 +332,10 @@ display: flex;
 
   .foundation{
     width: 100%;
-    height: 410px;
+    height: 849px;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
  
     
 }
@@ -363,10 +366,23 @@ flex: 2;
     letter-spacing: -0.01em;
     color: #5c5c5c
 }
+
+
 .fo-description-box2{
-background-color: rgb(6, 44, 32);
 flex: 1;
-margin-left: 10px;
+}
+
+.fo-description-box2 p{
+    padding-left: 22px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.fo-description-box2 p+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5c5c5c;
+    font-family: serif;
+
 }
 
 .fo-images{
