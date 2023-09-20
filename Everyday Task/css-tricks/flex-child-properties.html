@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title{
+            background-color: black;
+            color: white;
+        }
+        h1,h2{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 60px;
+        }
+        .container, .container-2{
+            width: 100%;
+            background-color: rgb(122, 122, 122);
+            display: flex;
+            flex-wrap: wrap;
+        }    
+        
+
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            margin: 10px;
+            color: white;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .box-1{
+            order: 5; /* default is 0 */
+        }
+       .box-6{
+        flex-grow: 1;
+       }
+       .box-7{
+        flex-grow: 2;
+       }
+       .box-8{
+        flex-grow: 1;
+       }
+       /* .box-6{
+        flex: 1;
+       }
+       .box-7{
+        flex: 2;
+       }
+       .box-8{
+        flex: 1;
+       } */
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Properties for the Child
+            (flex container)</h1>
+            <h2>Order</h2>
+    </div>
+    <div class="container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+    </div>
+
+    
+    <div class="title">
+        <h2>Flex-Grow</h2>
+    </div>
+    <div class="container-2">
+        <div class="box-6">Flex-Grow 1</div>
+        <div class="box-7">Flex-Grow 2</div>
+        <div class="box-8">Flex-Grow 1</div>
+    </div>
+</body>
+</html>
