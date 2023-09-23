@@ -9,7 +9,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border: 5px solid rgb(171, 169, 169);
         }
         .main{
             display: table;
@@ -19,7 +18,9 @@
             margin: 20px auto;
             position: relative;
             background-color: black;
+            border: 5px solid rgb(171, 169, 169);
         }
+       
         div[class*="box"]{
             display: table-cell;
             width: 200px;
@@ -28,6 +29,7 @@
             color: white;
             font-size: 35px;
             position: absolute;
+            border: 5px solid rgb(171, 169, 169);
         }
         .box-1{
            
@@ -50,8 +52,71 @@
             right: 0;
             bottom: 0;
         }
-        
-
+        .main-2{
+            display: table;
+            border-collapse: collapse;
+            width: 80%; 
+            margin: 20px auto;
+            position: relative;
+            background-color: black;
+        }
+        .Box1{
+            width: 37%;
+            height: 320px;
+            background-color: rgb(171, 169, 169);
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 25px;
+            color: Black;
+        }
+        .Box2{
+            width: 27%;
+            height: 250px;
+            background-color: rgb(58, 57, 57);
+            border:5px solid rgb(58, 57, 57) ;
+            margin: 20px auto;
+            position: absolute;
+            left: 387px;
+            top: 35px;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+        .Box3{
+            width: 17%;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            border:5px solid rgb(255, 255, 255);
+            margin: 20px auto;
+            position: absolute;
+            left: 439px;
+            top: 84px; 
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 25px;
+        }
+        .Flex-Box{
+            width: 80%;
+            height: 350px;
+            background-color: rgb(152, 152, 152);
+            margin: 20px auto;
+            display: flex;
+        }
+        .flex1{
+            flex: 1;
+            background-color: rgb(196, 194, 194);
+            margin: 15px;
+        }
+        .flex2{
+            flex: 1;
+            margin: 15px;
+            background-color: rgb(255, 255, 255);
+        }
     </style>
 </head>
 <body>
@@ -61,6 +126,18 @@
         <div class="box-3">3</div>
         <div class="box-4">4</div>
         <div class="box-5">5</div>
+    </div>
+
+    <div class="main-2">
+        <div class="Box1"><p>I Am Relative</p></div>
+        <div class="Box2"><p>I Am Absolute 1</p></div>
+        <div class="Box3"><p>I Am Absolute 2</p></div>
+    </div>
+    <div class="main-2">
+        <div class="Flex-Box">
+            <div class="flex1"></div>
+            <div class="flex2"></div>
+        </div>
     </div>
 </body>
 </html>
