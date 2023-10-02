@@ -37,13 +37,9 @@
     padding-bottom: 85px;
 }
 header{
-    /* width: 1366px;
-    height: 643px; */
     background-image: url(../Images/Banner1.png);
     background-size: cover ;
     background-position: center;
-    /* background-color: #f4f1e4; */
-
 }
 
 .col-50{
@@ -119,7 +115,6 @@ header{
 
 .section-text{
     margin: 0 auto;
-    width: 60%;
     padding-top: 70px;
 }
 .section-text h2{
@@ -136,6 +131,8 @@ header{
     font-family: sans-serif;
     text-align: center;
     margin-top: 30px;
+    margin: 0 100px;
+    padding: 16px 100px 0px;
     }
     .chef{
         display: flex;
@@ -262,8 +259,7 @@ div[class*="cs"] p{
 
 
 .packages{
-    /* background-color: rgb(127, 43, 43);
-    height: 200px; */
+    
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -271,10 +267,12 @@ div[class*="cs"] p{
     flex-wrap: wrap;
 }
 div[class*="pk"]{
-    width: 300px;
-    height: 400px;
+    width: 25%;
     border-radius: 8px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 div[class*="pk"] button{
     font-size: 18px;
@@ -284,13 +282,11 @@ div[class*="pk"] button{
     font-family: sans-serif;
     text-align: center;
     padding-top: 3px;
-    width: 250px;
-    height: 35px;
     border-radius: 32px;
     background-color: #f64b3c;
     border:none;
-    margin-left: 25px;
-    margin-top: 20px;
+    margin: 22px 38px;    
+
 }
 div[class*="pk"] h2{
     font-size: 30px;
@@ -329,8 +325,7 @@ div[class*="pk"] p{
 }
 
 .section-wrapper5 .main-text{
-    width: 50%;
-    margin: 0 auto;
+    margin: 0 100px;
     text-align: center;
     font-family: sans-serif;
     margin-top: 100px;
@@ -351,13 +346,13 @@ div[class*="pk"] p{
 /* -------------------------------------------- */
 
 .email-sub{
-    width: 549px;
-    height: 63px;
+    
     border-radius: 30px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    margin: 70px auto;
+    margin: 70px 100px;
+    /* padding: 0 50px; */
 }
 .email-sub input{
     opacity: 0.502;
@@ -398,9 +393,7 @@ footer{
     padding-bottom: 100px;
     padding-top: 100px;
 }
-/* .footer-wrapper{
-    margin-top: 100px;
-} */
+
 .footer-wrapper h2{
     font-size: 26px;
     color: #ffffff;
@@ -420,15 +413,13 @@ div[class*="anchor"] a, .col-40 p{
 
 
 div[class*="anchor"] {
-    margin-left: 58px;
+    margin-right: 90px;
 }   
 
 .col-40{
-    width: 40%;
     margin-right: 90px;
 }
 .col-60{
-    width: 60%;
     display: flex;
    
 }
@@ -439,3 +430,7 @@ div[class*="anchor"] {
     color: white;
 }
 
+.col-60 a{
+    /* padding: 0 px; */
+    padding-right: 40px;
+}
