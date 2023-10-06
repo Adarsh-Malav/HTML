@@ -1,0 +1,149 @@
+@media (max-width: 576px) { 
+    .nav{
+        align-items: center;
+         padding: 20px 0px;
+    }
+    .logo{
+        margin-top: 0;
+    }
+    .nav-menu{
+        font-size: 23px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        right: -22px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.714);
+        display: none;
+    }
+    .nav-menu p{
+        margin: 40px 100px;
+        /* margin-right: 46px; */
+        padding-right: 32px;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+       }
+       
+       header .main-text{
+        text-align: center;
+        margin-top: 45px;
+       }
+       header .main-text h1{
+        padding: 0px 34px;
+        font-size: 55px;
+       }
+       #check:checked ~ .nav-menu{
+        /* right: -30px; */
+        display: block;
+    } 
+    .col-50{
+        width: 100%;
+    }
+    .section-text{
+        padding-top: 0;
+    }
+    .section-wrapper{
+        padding-bottom: 20px;
+    }
+    .section-text h2{
+        font-size: 38px;
+    }
+    #chef-p{
+        margin: 0 30px;
+        padding: 8px 5px;
+        }
+        div[class*="box"]{
+            width: 100%;
+        }
+    div[class*="pk"] p{
+        font-size: 15px;
+        margin-top: 10px 20px;
+    
+    }
+    .col-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-container .col-50{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .burger{
+        margin-top: 10px;
+        padding: 0 88px;
+        margin: 0 10px;
+    }
+    .section-wrapper-2 .main-text h1{
+        padding: 0px;
+    }
+    .section-wrapper-2 .main-text p{
+        padding-top: 20px;
+    }
+    
+    .packages{
+       margin-top: 50px;
+    }
+    
+    div[class*="pk"] button{
+        font-size: 18px;
+        padding-top: 3px;
+        margin: 22px 45px;    
+    }
+    .pack-image{
+        margin-top: 10px;
+        padding-right: 0px;
+     }
+     #package-h2{
+        padding-top: 0;
+      }
+      .circles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      div[class*="cs"]{
+        width: 100%;
+        margin-top: 30px;
+      }
+      section-4 .section-text p{
+        padding: 0 0;
+         margin: 10px 0;
+         font-size: 20px;
+      }
+      section-4 .section-wrapper{
+        padding-top: 60px;
+      }
+      .section-wrapper5 .main-text{
+        margin: 0 0;
+        padding: 0 0;
+      } 
+    
+    section-7 .section-text p{
+          padding: 12px 19px 0px;
+      }
+      .email-sub{
+        margin: 70px 10px;
+        padding-left:50px;
+    }
+    .email-sub button{
+        margin-right: 0;        
+    }
+    .f-icons{
+       margin: 10px 5px;
+       font-size: 25px;
+    }
+    .col-60{
+        margin-top: 50px;
+    }
+}

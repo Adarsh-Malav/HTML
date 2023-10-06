@@ -1,0 +1,103 @@
+@media (max-width: 992px) { 
+    .nav-menu p{
+        margin-right: 25px;
+    }
+    .Header-Wrapper h1{
+        font-size: 55px;
+    }
+    .Header-Wrapper p{
+        font-size: 23px;
+    }
+    .Header-Wrapper button{
+        font-size: 18px;
+        padding: 10px 30px;
+        margin-top: 35px;
+    }
+    .section-text h2{
+        font-size: 46px;
+    }
+    div[class*="box"] h2{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    div[class*="box"] p{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .section-text p{
+        font-size: 20px;
+        margin-top: 30px;
+        margin: 0 100px;
+        padding: 16px 100px 0px;
+        }
+    .burger{
+        margin-top: 50px;
+        padding: 100px;
+    }
+
+    section-4 .section-text h2{
+        font-size: 50px;
+    }
+    section-4 .section-text p{
+        font-size: 25px;
+        margin-top: 30px;
+        margin: 0 50px;
+        padding: 16px 80px 0px;
+        }
+        div[class*="cs"]{
+            width: 220px;
+            height: 220px;
+        }    
+    div[class*="pk"] h2{
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    div[class*="cs"] h2{
+        font-size: 55px;
+    }
+    .packages{
+       padding: 0px;
+       gap: 20px;
+    }
+    div[class*="pk"] p{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    div[class*="pk"] button{
+        font-size: 20px;
+        padding-top: 0px;
+        margin:10px 95px;    
+    }
+    div[class*="pk"]{
+        margin-top: 10px;
+    }
+    .pack-image{
+       padding: 0px;
+       margin: 0 auto;
+        
+    }
+     
+
+    section-7 .section-wrapper{
+        padding: 20px 0;
+    }
+    section-7 .section-text{
+        margin-top: 90px;
+        padding-top: 50px;
+    }
+    .email-sub input{
+       
+        margin-left: 0px;
+    }
+    .col-40{
+        margin-right: 45px;
+    }
+
+    div[class*="anchor"] {
+        margin-right: 35px;
+    }
+    div[class*="anchor"] a, .col-40 p{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+}

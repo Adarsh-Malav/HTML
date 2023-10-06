@@ -1,0 +1,124 @@
+@media (max-width: 768px) { 
+    .nav-menu p{
+        margin-right: 25px;
+    }
+    .Header-Wrapper h1{
+        font-size: 45px;
+    }
+    .Header-Wrapper p{
+        font-size: 20px;
+    }
+    .Header-Wrapper button{
+        font-size: 18px;
+        padding: 10px 30px;
+        margin-top: 35px;
+    }
+    .section-text h2{
+        font-size: 42px;
+    }
+    div[class*="image"] {
+        width: 150px;
+        height: 150px;
+    }
+    div[class*="box"] h2{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    div[class*="box"] p{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .section-text p{
+        font-size: 20px;
+        margin-top: 30px;
+        margin: 0 60px;
+        /* padding: 16px 90px 0px; */
+        }
+    .burger{
+        margin: 20px 50px;
+        /* margin-right: 20px; */
+        /* padding: 50px; */
+    }
+    .section-wrapper-2 .main-text p{
+        font-size: 20px;
+        margin-top: 18px;
+        padding-top: 0;
+    }
+    .section-wrapper-2 .main-text{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .section-wrapper-2 .main-text h1{
+        font-size: 45px;
+        padding-top: 5px;
+      }
+     /* .section-text{
+        padding-top: 0;
+      } */
+      #package-h2{
+        padding-top: 0;
+      }
+    section-4 .section-text h2{
+        font-size: 45px;
+       
+    }
+    /* section-4 .section-text p{
+        font-size: 20px;
+        margin-top: 30px;
+        margin: 0 30px;
+        padding: 16px 80px 0px;
+        } */
+        div[class*="cs"]{
+            width: 170px;
+            height: 170px;
+        }    
+    div[class*="pk"] h2{
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    div[class*="cs"] h2{
+        font-size: 45px;
+    }
+    div[class*="pk"]{
+        width: 60%;
+    }
+    div[class*="pk"] p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .packages{
+       margin-top: 50px;
+    }
+    
+    div[class*="pk"] button{
+        font-size: 18px;
+        padding-top: 3px;
+        margin: 22px 45px;    
+    }
+    .pack-image{
+        margin-top: 10px;
+        padding-right: 0px;
+     }
+     .email-sub input, .email-sub button{
+        font-size: 18px;
+     }
+
+    section-7 .section-wrapper{
+        padding: 20px 0;
+    }
+    section-7 .section-text{
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .col-40{
+        margin-right: 45px;
+    }
+
+    div[class*="anchor"] {
+        margin-right: 19px;
+    }
+    div[class*="anchor"] a, .col-40 p{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+}
