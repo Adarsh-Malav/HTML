@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav-menu{
+background-color: #b13941;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.nav-left a, .nav-right a{
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: right;
+    text-decoration: none;
+    margin: 0 30px;
+}
+.main-text-wrapper{
+    background: url(../Images/Coffe-Banner.png)no-repeat center center/cover;
+    padding-bottom: 80px;
+    
+    text-align: center;
+}
+.main-text{
+   display: flex;
+   flex-direction: column;
+
+
+}
+header{
+    border-radius: 3px;
+    /* background-image: linear-gradient(0deg, #b13941 0%, #55181c 100%); */
+    background-color: #b13941;
+}
+header h2{
+    font-size: 98px;
+    color: #feedda;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+header h1{
+    margin: 50px 100px 0;
+    padding: 50px 100px 0;
+    font-size: 98px;
+    color: #feedda;
+    font-weight: 400;
+    text-align: center;
+
+}
+header p{
+   
+    font-size: 21px;
+    color: #fefefe;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 100px;
+    padding: 0 50px;
+}
+/* .get-s{
+    display: flex;
+    justify-content: center;
+} */
+.main-text-wrapper button{
+    font-size: 21px;
+    color: #feedda;
+    font-weight: 700;
+    background-color: #b13941;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 80px 0;
+    border: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.section-1{
+    /* height: 500px; */
+    border-radius: 3px;
+    /* background-image: linear-gradient(0deg, #b13941 0%, #55181c 100%); */
+    background-color: #b13941;
+}
+.col-container{
+    display: flex;
+}
+.section-1-wrapper h2, .section-1-wrapper h3{
+    font-size: 37px;
+    color: #feedda;
+    font-weight: 700;
+}
+.section-1-wrapper p{
+    font-size: 14px;
+    color: #feedda;
+    font-weight: 400;
+}
+.section-1-wrapper button{
+    font-size: 18px;
+    color: #b13941;
+    font-weight: 700;
+    background-color: #feedda;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 40px;
+}
+.col-40{
+    width: 40%;
+}
+.coffee-brand{
+    padding: 80px;
+}
+.col-60{
+    width: 60%;
+}
+.col-60 .main-text{
+    padding-top: 100px;
+    padding-left: 40px;
+}
+.col-60 h2, .col-60 h3, .col-60 p, .col-60 button{
+    margin-top: 20px;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+.section-2-wrapper .col-60{
+    background-color: #f8eed3;
+}
+.section-2-wrapper .main-text h2{
+    font-size: 75px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    padding: 0 60px;
+    margin: 0 50px;
+}
+.section-2-wrapper .main-text p{
+    font-size: 20px;
+    color: #575757;
+    font-weight: 400;
+    font-family: "PT Serif";
+    padding: 0 60px;
+    margin: 30px 50px;
+}
+
+.section-2-wrapper .main-text a{
+    color: #b13941;
+    padding-left: 100px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.section-4{
+    background-color: #f8eed3;
+}
+.section-4 h2{
+    font-size: 58px;
+    color: #b13941;
+    font-weight: 700;
+    font-family: "Yeseva One";
+    text-align: center;
+}
+.section-4 p{
+    font-size: 21px;
+    color: #b13941;
+    font-weight: 400;
+    font-family: "PT Serif";
+    text-align: center;
+    margin: 20px 80px;
+    padding: 0 50px;
+}
+.store-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-1{
+    width: 28%;
+    background-color: #ffffff;
+    text-align: center;
+}
+div[class*="box-image"]{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.box-image-1{
+    background: url(../Images/Corpertum.png)no-repeat center center/cover;
+}
+.box-image-2{
+    background: url(../Images/Vesttibulun.png)no-repeat center center/cover;
+}
+.box-image-3{
+    background: url(../Images/Convallis.png)no-repeat center center/cover;
+}
+.store-box h3{
+    font-size: 25px;
+    color: #b13941;
+    font-weight: 700;
+    font-family: "PT Serif";
+    padding: 10px 20px;
+    background-color: #f8eed3;
+    position: absolute;
+    bottom: -26px;
+    border: 2px solid #b13941; 
+    outline: 12px solid #f8eed3;
+}
+
+.store-box p{
+    margin: 50px 30px 10px;
+    padding: 0;
+    font-size: 17px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "PT Serif";
+    text-align: center;
+} 
+.store-box button{
+    font-size: 21px;
+    color: #f8eed3;
+    border: none;
+    padding: 5px 15px;
+    margin: 30px 0 60px;
+    background-color: #b13941;
+    font-weight: 700;
+    font-family: "EB Garamond";
+}
+/* ---------------------------------------------------------------------------------------------------- */

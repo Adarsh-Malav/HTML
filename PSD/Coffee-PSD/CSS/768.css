@@ -1,0 +1,23 @@
+.section-1-wrapper .main-text{
+    padding-top: 58px;
+}
+.section-2-wrapper .main-text{
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.section-2-wrapper .main-text h2{
+    font-size: 54px;
+    padding: 0 44px;
+    margin: 0 20px;
+}
+.section-2-wrapper .main-text p{
+    font-size: 18px;
+    padding: 0 41px;
+    margin: 15px 22px;
+}
+.section-2-wrapper .main-text a{
+    padding-top: 5px;
+    padding-left: 50px;
+    margin-left: 10px;
+}
