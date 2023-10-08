@@ -1,33 +1,77 @@
+@media (max-width: 992px) { 
+
+header p{
+    padding: 0 0;
+}    
+.main-text-wrapper{
+    padding-bottom: 0;
+}
 .section-1-wrapper .main-text{
     padding-top: 58px;
 }
-.section-2-wrapper .main-text{
-    padding-top: 20px;
-    padding-left: 0;
-}
 
 .section-2-wrapper .main-text h2{
-    font-size: 64px;
-    padding: 0 44px;
+    font-size: 75px;
+    padding: 0 10px;
     margin: 0 20px;
+    
 }
 .section-2-wrapper .main-text p{
-    padding: 0 38px;
-    margin: 25px 54px;
+    margin: 20px 20px;
+    padding: 0 10px;
 }
+.section-2-wrapper .main-text{
+    padding-top: 20px;
+}
+/* 
+
+*/
+   
 .section-2-wrapper .main-text a{
-    padding-top: 15px;
-    padding-left: 70px;
-    margin-left: 10px;
+    padding-left: 20px;
 }
 
 /* -------------------------------------------------------------------------------------------------- */
 
 .store-box button{
-    margin: 10px 0 3s0px;
+    margin: 10px 0 30px;
     background-color: #b13941;
     font-weight: 700;
     font-family: "EB Garamond";
 }
+/* -------------------------------------------------------------------------------------------------- */
+.section-5 .main-text{
+    /* margin-top: 100px; */
+    margin-top: 50px;
+    
+}
+.section-5 .main-text h2{
+    font-size: 45px;
+}
+.section-5 .main-text p{
+    margin: 10px 0;
+}
 
 /* -------------------------------------------------------------------------------------------------- */
+
+.section-6 textarea{
+    height: 180px;
+}
+.section-6-wrapper button{
+   
+    padding: 10px 20px;
+    margin: 10px 0;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+/* -------------------------------------------------------------------------------------------------- */
+
+footer .col-container{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+
+
+}
+

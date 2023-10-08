@@ -14,10 +14,8 @@ align-items: center;
 
 .nav-left a, .nav-right a{
     font-size: 25px;
-    letter-spacing: 0px;
     color: #ffffff;
     font-weight: 400;
-    text-align: right;
     text-decoration: none;
     margin: 0 30px;
 }
@@ -125,7 +123,7 @@ header p{
     padding-top: 100px;
     padding-left: 40px;
 }
-.col-60 h2, .col-60 h3, .col-60 p, .col-60 button{
+.section-1-wrapper .col-60 h2, .section-1-wrapper .col-60 h3, .section-1-wrapper .col-60 p,  .section-1-wrapper .col-60 button{
     margin-top: 20px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
@@ -142,7 +140,7 @@ header p{
     padding: 0 60px;
     margin: 0 50px;
 }
-.section-2-wrapper .main-text p{
+.section-2-wrapper .main-text p{    
     font-size: 20px;
     color: #575757;
     font-weight: 400;
@@ -235,4 +233,153 @@ div[class*="box-image"]{
     font-weight: 700;
     font-family: "EB Garamond";
 }
+.section-4-wrapper{
+    padding-bottom: 80px;
+}
 /* ---------------------------------------------------------------------------------------------------- */
+
+.section-5{
+    background-color: #b13941;
+}
+.section-5 .main-text h2{
+    font-size: 58px;
+    color: #f8eed3;
+    font-family: "Yeseva One";
+}
+.section-5 .main-text p{
+    font-size: 21px;
+    color: #f8eed3;
+    font-weight: 400;
+    font-family: "PT Serif";
+}
+.coffee-jar{
+    margin: 90px 70px;
+}
+
+.f-icons{
+    color: #b13941;
+    background-color: #ffffff;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.section-5 .main-text{
+    margin-top: 100px;
+    padding-top: 40px;
+
+}
+.section-5 .main-text p{
+    margin: 30px 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.section-6-wrapper .col-60 .main-text{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.section-6 .main-text h2{
+    font-size: 50px;
+    color: #b13941;
+    font-family: "Yeseva One";
+    margin-left: 30px;
+}
+.section-6 .main-text input{
+    background-color: #efefef;
+    border: 1.5px solid #e59c9c;
+    font-size: 21px;
+    color: #b0b0b0;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 10px 20px;
+    margin: 10px 30px;
+}
+.section-6-wrapper button{
+    font-size: 18px;
+    color: #feedda;
+    font-weight: 700;
+    background-color: #b13941;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+.section-6-wrapper textarea{
+    margin: 20px 30px;
+    background-color: #efefef;
+    border: 1.5px solid #b0b0b0;
+    font-size: 21px;
+    color: #b0b0b0;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 10px 30px;
+    margin: 10px 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+footer{
+    background-color: #b13941;
+}
+footer .col-container{
+   justify-content: space-evenly;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+div[class*="anchor"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+}
+div[class*="anchor"] a{
+    margin-top: 10px;
+}
+.links a, .address a{
+    text-decoration: none;
+    color: #f8eed3;
+
+}
+footer h2, footer p{
+    color: #f8eed3;
+}
+footer p, footer a{
+    font-size: 17px;
+    color: #f8eed3;
+    font-weight: 700;
+    font-family: "EB Garamond";
+}
+.footer-brand{
+    margin: 40px 0px;
+    margin-right: 60px;
+    /* width: 10%; */
+    /* padding-right: 40px; */
+}
+.copy-logo{
+    margin: 22px 100px 0 0;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 14%; */
+}
+.links{
+    margin-right: 40px;
+}
+.address p{
+    /* padding-right: 0px; */
+    margin: 30px 0;
+}
+.copywrite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-right: 0px; */
+}
+.company-logo .f-icons{
+    font-size: 18px;
+}

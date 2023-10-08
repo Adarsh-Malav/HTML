@@ -1,0 +1,26 @@
+@media (max-width: 1200px) { 
+   
+    .section-6-wrapper .col-60 .main-text{
+        padding-top: 5px;
+    }
+    .section-6 .main-text h2{
+        font-size: 40px;
+        margin-top: 10px;
+       
+    }
+    .section-6-wrapper button{
+        font-size: 18px;
+        
+        padding: 10px 20px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+/* ---------------------------------------------------------     */
+.footer-brand{
+    margin: 40px 0px;
+    margin-right: 30px;
+}
+.company-logo .f-icons{
+    font-size: 15px;
+}
+}
