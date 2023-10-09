@@ -92,6 +92,10 @@ header p{
         width: 100%;
         text-align: center;
     }
+    .section-6 .col-60 .main-text {
+        /* margin: 0 auto; */
+        padding-left: 0;
+    }
     
     /* -------------------------------------------------------- */
     .footer-brand{
@@ -104,6 +108,7 @@ header p{
     }
     .links{
         text-align: center;
+        margin-right: 0;
     }
     div[class*="anchor"] a{
         margin: 5px 25px;

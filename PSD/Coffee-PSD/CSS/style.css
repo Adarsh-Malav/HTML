@@ -19,6 +19,16 @@ align-items: center;
     text-decoration: none;
     margin: 0 30px;
 }
+
+header input[type="checkbox"]{
+    display: none;
+}
+header .sidebar{
+    display: none;
+}
+header .down-arrow{
+    display: none;
+}
 .main-text-wrapper{
     background: url(../Images/Coffe-Banner.png)no-repeat center center/cover;
     padding-bottom: 80px;

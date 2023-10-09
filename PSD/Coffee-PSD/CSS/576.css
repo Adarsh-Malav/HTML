@@ -1,3 +1,139 @@
 @media (max-width: 576px) {
+ .nav-left, .nav-right{
+    display: none;
+ }   
+ .nav-menu{
+    justify-content: space-between;
+    position: relative;
+ }
+ header .down-arrow{
+    display: block;
+    color: white;
+    font-size: 60px;
+}
+.sidebar{
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.42);
+    right: -10px;
+    top: 73px;
+    transition: 0.5s;
+    padding: 0 80px;
 
+}
+.sidebar a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+#check:checked ~ .sidebar{
+    display: flex;
+} 
+header h1, header h2 {
+    margin: 0;
+    padding:0 10px;
+    font-size: 85px;
+   
+}
+header .main-text{
+    text-align: center;
+    padding-top: 50px;
+}
+header p{
+    margin: 25px 30px;
+}
+header .main-text-wrapper button{
+    margin: 20px 0 50px;
+}
+/* -------------------------------------------------------- */
+.section-1 .col-container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-1 .col-40{
+    width: 100%;
+}
+.coffee-brand{
+    padding: 38px 93px;
+}
+.section-1 .col-container .main-text{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.section-1 .col-container .main-text p{
+    font-size: 18px;
+}
+.section-1 .col-60{
+    text-align: center;
+}
+.section-1 .col-60 button{
+    margin: 40px;
+}
+/* ------------------------------------------------------- */
+.section-2 .col-container{
+    flex-direction: column;
+}
+.section-2 .col-container .col-40, .section-2 .col-container .col-60{
+    width: 100%;
+}
+.section-2-wrapper .main-text a {
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+.coffee-cup{
+    margin: 63px 68px 0;
+}
+.section-2 .main-text{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.store-box{
+    flex-direction: column;
+}
+.store-box .box-1{
+    width: 100%;
+}
+/* ---------------------------------------------------- */
+.section-5 .col-container{
+    flex-direction: column;
+}
+.section-5 .col-container .col-60, .section-5 .col-container .col-40{
+    width: 100%;
+}
+.section-5 .col-container .main-text{
+    text-align: center;
+}
+.coffee-jar{
+    margin: 50px 20px 10px;
+}
+/* ---------------------------------------------------- */
+.section-6 .main-text h2 {
+    margin: 0;
+}
+.section-6 .col-60 .main-text {
+    /* margin: 0 auto; */
+    padding-left: 0;
+}
+/* ---------------------------------------------------- */
+.footer-brand{
+    margin: 40px 40px 20px;
+}
+.links{
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+div[class*="anchor"]{
+    margin: 0;
+    padding: 10px 0;
+}
+div[class*="anchor"] p{
+    font-size: 15px;
+}
 }
