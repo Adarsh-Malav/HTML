@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/992.css">
+    <link rel="stylesheet" href="CSS/768.css">
+    <link rel="stylesheet" href="CSS/576.css">
+</head>
 </head>
 <body>
     <div class="header">
@@ -14,6 +18,10 @@
 
                 <div class="row">
                     <div class="logo">Your logo</div>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fa-solid fa-bars bar"></i>
+                    </label>
                     <div class="nav-menu">
                         <a href="">Home</a>
                         <a href="">Menu</a>
@@ -43,13 +51,13 @@
                     
                 </div>
                 <div class="date-time">
-                    <dxiv class="date-format">
+                    <div class="date-format">
                         <div class="date">
                             <p>Date</p>
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <input type="date">
-                    </dxiv>
+                    </div>
 
                     <div class="time-format">
                         <div class="time">
@@ -100,6 +108,23 @@
                         <button class="explore">Read More</button>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div class="section-2-wrapper">
+            <div class="main-text-2">
+                <p>COVID-19 Protocol</p>
+                <h2>We care about you</h2>
+                <button class="explore">Read more</button>
+            </div> 
+            <div class="image-wrapper">
+                <div class="section-2-images">
+                    <div class="left-table"><img src="Images/Table-left.png" width="100%" alt=""></div>
+                    <div class="waiters"><img src="Images/waiters.png" width="100%" alt=""></div>
+                    <div class="right-table"><img src="Images/Table-right.png" width="100%" alt=""></div>
                 </div>
             </div>
         </div>
@@ -173,6 +198,44 @@
         </div>
     </div>
 
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+
+                <div class="links">
+                    <div class="anchlink">
+
+                        <div class="anchor-1">
+                            <h2>About</h2>
+                            <a href="">History</a>
+                            <a href="">Our Team</a>
+                            <a href="">Brand Guidelines</a>
+                            <a href="">Terms & Condition</a>
+                            <a href="">Privacy Policy</a>
+                        </div>
+                    <div class="anchor-2">
+                        <h2>About</h2>
+                        <a href="">History</a>
+                        <a href="">Our Team</a>
+                        <a href="">Brand Guidelines</a>
+                        <a href="">Terms & Condition</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    </div>
+                    <div class="contacts">
+                        <h2>Sign Up To Recieve</h2>
+                        <h2>Our Newsletter</h2>
+                        <div class="icons">
+                            <p>Follow us!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
 
 </body>
 </html>

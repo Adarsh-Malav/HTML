@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>div#lH {
+        /* position: absolute;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        z-index: 1;
+        font-size: 25px;
+        text-align:center; */
+      }
+     
+      #aH{
+            animation-play-state: paused;
+            background-color: aqua;
+        }
+        #music-1:checked ~ #aH{
+            animation-play-state: running;
+            animation-duration: 10s;
+            
+            }
+      </style>
+</head>
+<body>
+   
+  <label for="aH">
+
+    <input type="checkbox" name="ch" id="music-1">
+  </label>
+        <audio controls id="aH">
+          <!-- <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg"> -->
+          <source src="../../Music/Pasoori.mp4" type="audio/mpeg" id="aud">
+      </audio>
+    
+</body>
+</html>

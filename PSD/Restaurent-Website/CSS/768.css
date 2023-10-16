@@ -1,0 +1,102 @@
+@media (max-width: 768px) { 
+    .header .header-wrapper .container .image-container .col-40{
+        width: 100%;
+    }
+
+
+
+    .nav-menu{
+        font-size: 23px;
+        position: absolute;
+        right: 0px;
+        top: 100px;
+       
+        background-color: rgba(0, 0, 0, 0.714);
+        display: none;
+    }
+    .nav-menu a{
+        font-size: 33px;
+        text-align: center;
+        margin: 40px;
+    }
+    .nav-menu p{
+        margin: 40px 100px;
+        padding-right: 32px;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 70px;
+       }
+
+       #check:checked ~ .nav-menu{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    } 
+    .row button {
+        margin-right: 50px;
+    }
+    .date-time button{
+        padding: 20px;
+        margin: 12px 0 2px;
+        margin-left: 10px;
+    }
+    .date, .time, .mail{
+        justify-content: center;
+    }
+    .time-format, .mail-format{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .header .main-text {
+        padding: 70px 0 0;
+    }
+    .time-format, .mail-format{
+        margin-left: 10px;
+    }
+    .date-time{
+        flex-wrap: wrap;
+    }
+
+    .section-1 .food-box{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .section-1 .food-box .food-1{
+        width: 45%;
+    }
+    .section-3 .col-40, .section-3 .col-60,    .section-4 .col-40, .section-4 .col-60, .section-5 .col-40, .section-5 .col-60{
+        width: 100%;
+    }
+    .section-3 .col-container, .section-4 .col-container, .section-5 .col-container{
+        flex-direction: column;
+    }
+    .section-3 .main-text-3,  .section-4 .main-text-3,  .section-5 .main-text-3{
+        margin-right: 0;
+        padding: 80px 0 40px;
+    }
+    .section-3 .col-60 .illustration-2, .section-4 .col-60 .illustration-2, .section-5 .col-60 .illustration-2{
+        margin: 0 0;
+        padding: 25px;
+    }
+    .section-5 .main-text-3{
+        padding: 40px 0 40px;
+    }
+   
+    .links {
+        padding: 30px 0;
+    }
+    footer h2 {
+    font-size: 35px;
+    }
+    div[class*="anchor"] {
+        margin: 0 5px;
+    }
+    div[class*="anchor"] a{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+ .header{
+    text-align: center;
+ }
+ .row button {
+    margin-right: 70px;
+}
+ .section-2, .section-3, .section-4, .section-5{
+    text-align: center;
+ }
+ .section-1 .food-box .food-1{
+    width: 100%;
+}
+.anchlink{
+    gap: 50px;
+}
+.links{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+footer h2{
+    text-align: center;
+}
+}
