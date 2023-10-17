@@ -1,55 +1,81 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  
-<head> 
-    <title> 
-        How to move an element in a  
-        Circular Path using CSS ? 
-    </title> 
-      
-    <style> 
-       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         .parent{
-            border: 2px solid black;
-            width: 300px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
+            background-color: rgb(88, 247, 186);
+            width: 100%;
+            height: 800px;
+            padding-top: 100px;
             
         }
-        
-        .box { 
-            width: 50px; 
-            height: 50px; 
-            border-radius: 50%; 
-            /* margin:200px  auto 0;  */
-            border-bottom:5px solid rgb(0, 0, 0); 
-            animation: GFG 5s infinite alternate; 
-            color: aliceblue;
-        } 
-  
-        @keyframes GFG { 
-            0% { 
-                transform: rotate(0deg)  
-                      translateY(100px); 
-            } 
-  
-            100% { 
-                transform: rotate(360deg)  
-                      translateY(100px)  ; 
-            } 
-        } 
-    </style> 
-</head> 
-  
-<body> 
-
+        .line{
+            width: 50px;
+            height: 200px;
+            background-color: white;
+            animation-name: line;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            transform: skewX(300deg);
+            animation-fill-mode: forwards;
+            margin-top: 500px;
+            margin-left: 0px;
+        }
+        @keyframes line {
+            10%{
+                /* transform: translate3d(0,0,0px); */
+                /* transform: translateY(0px); */
+                margin-top: 500px;
+                margin-left: 0px;
+                
+            }
+            50%{
+            }
+            100%{
+                margin-left: 500px;
+                margin-top: 0px;
+                /* transform: scale(0,0,0.2); */
+                /* transform: translate3d(100px,0,50px); */
+                /* transform: translateY(100px); */
+            }
+        }
+        .car{
+            width: 25%;
+            margin-left: 550px;
+            animation-name: car;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            /* animation-fill-mode: forwards; */
+        }
+        /* @keyframes car {
+            5%{
+                margin-left: 800px;
+            }
+            10%{
+                margin-left: 0px;
+            }
+            15%{
+                
+            }
+        } */
+    </style>
+</head>
+<body>
     <div class="parent">
+        <div class="car"><img src="../../images/car-front-1.webp" width="100%" alt=""></div>
+        <div class="line">
 
-        <div class="box">adarsh</div> 
+        </div>
     </div>
-</body> 
-  
+</body>
 </html>

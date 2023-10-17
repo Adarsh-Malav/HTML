@@ -62,12 +62,12 @@
             width: 200px;
             /* background-color: white; */
             animation-name: car;
-            animation-duration: 10s;
+            animation-duration: 5.5s;
             animation-iteration-count: infinite;
             position: absolute;
                 top: 0px;
-                left: 0px;
-                transform: rotate(0deg) rotate(0deg);
+                left: 400px;
+               
         }
         @keyframes car {
            
@@ -76,7 +76,7 @@
                left: 925px;
             }
             10%{
-                transform: rotate(90deg);
+                /* transform:rotate(90deg); */
             }
             15%{
                 top: 425px;
@@ -84,7 +84,7 @@
               
             }
             20%{
-                transform: rotate(180deg);
+                /* transform: rotate(180deg); */
             }
             25%{
 
@@ -92,19 +92,23 @@
                left: -40px;
             }
             30%{
-                transform: rotate(270deg);
+                /* transform: rotate(270deg); */
             }
             35%{
                 top: 0px;
                 left: -40px;
             }
             40%{
-                transform: rotate(360deg) rotate(0deg)
+                /* transform: rotate(360deg) rotate(0deg) */
+            }
+            45%{
+                top: 0px;
+               left: 400px;
             }
 
           
         }
-        #check-1:checked ~ .car{
+        /* #check-1:checked ~ .car{
             animation-duration: 15s;
             
         } 
@@ -125,7 +129,7 @@
             animation-duration: 10s;
             animation-direction: reverse;
             
-            } 
+            }  */
         input{
             display: none;
         }    
@@ -148,7 +152,7 @@
             <div class="car"><img src="../../images/yellow-ferrari.png" width="100%" alt=""></div>
            <div class="white-line">
                <div class="inner-box">
-                <label for="check-1" id="check-one">
+                <!-- <label for="check-1" id="check-one">
                     <p >First Gear</p>
                 </label>
                 <label for="check-2" id="check-two">
@@ -162,7 +166,7 @@
                 </label>
                 <label for="check-5" id="check-five">
                     <p >Reverse</p>
-                </label>
+                </label> -->
                </div>
             </div>
         </div>
