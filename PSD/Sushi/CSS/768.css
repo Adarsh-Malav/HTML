@@ -1,0 +1,64 @@
+@media (max-width: 768px) { 
+    header{
+
+        overflow: hidden;
+    }
+    .logo{
+        display: none;
+    }
+    header .col-50{
+        width: 100%;
+    }
+    .email-sub button {
+        font-size: 17px;
+    }
+    .nav-menu{
+        font-size: 23px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: sans-serif;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.714);
+        display: none;
+    }
+    .nav-menu p{
+        margin: 50px;
+
+    }
+    .section-4-wrapper .main-text p {
+        padding: 25px 20px;
+        margin: 0 20px;
+    }
+    .section-wrapper-6 .main-text {
+        margin: 0 20px;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .section-7-wrapper .main-text p {
+        padding: 25px 20px;
+    }
+    .bar{
+        display: block;
+       }
+       header .main-text{
+        text-align: center;
+       }
+       #check:checked ~ .nav-menu{
+        display: block;
+    } 
+    .main-text button {
+         margin-top: 28px;
+    }   
+    .burger {
+        width: 80%;
+    }
+    .email-sub {
+        width: 73%;
+       
+    }
+}

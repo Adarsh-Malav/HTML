@@ -1,0 +1,25 @@
+@media (max-width: 992px) { 
+    .nav-menu p{
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .nav-menu{
+        padding: 0 25px;
+    }
+    .section-2-wrapper .main-text h2 {
+        font-size: 55px;
+    }
+    .email-sub {
+        width: 73%;
+       
+    }
+    footer .col-container{
+        flex-direction: column;
+    }
+    footer .col-40, footer .col-60{
+        width: 100%;
+        text-align: center;
+        margin: 0px 0 40px;
+
+    }
+}
