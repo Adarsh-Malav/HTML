@@ -1,7 +1,7 @@
 @media (max-width: 768px) { 
     header{
-
         overflow: hidden;
+        text-align: center;
     }
     .logo{
         display: none;
@@ -13,11 +13,6 @@
         font-size: 17px;
     }
     .nav-menu{
-        font-size: 23px;
-        text-transform: uppercase;
-        color: #ffffff;
-        font-weight: 600;
-        font-family: sans-serif;
         position: absolute;
         left: 0px;
         top: 50px;
@@ -28,7 +23,6 @@
     }
     .nav-menu p{
         margin: 50px;
-
     }
     .section-4-wrapper .main-text p {
         padding: 25px 20px;
@@ -45,9 +39,6 @@
     .bar{
         display: block;
        }
-       header .main-text{
-        text-align: center;
-       }
        #check:checked ~ .nav-menu{
         display: block;
     } 
@@ -56,9 +47,5 @@
     }   
     .burger {
         width: 80%;
-    }
-    .email-sub {
-        width: 73%;
-       
     }
 }
